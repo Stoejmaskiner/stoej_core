@@ -20,3 +20,8 @@ END_JUCE_MODULE_DECLARATION
 #include "src/stoej_APVTS.h"
 #include "src/stoej_parameters.h"
 #include "src/stoej_properties.h"
+
+
+// NOTE: for internal use only!
+// defines a templated type FT that satisfies the std::floating_point<FT_> concept
+#define STOEJ_FT_ template<typename FT_> requires std::floating_point<FT_>
